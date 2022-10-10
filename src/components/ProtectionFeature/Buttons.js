@@ -25,12 +25,23 @@ const StyledButton = styled.button`
     border-radius: 30px;
     font-size: 16px;
     color: ${props => props.color};
-`
+    cursor: pointer;
+    transition: 1s;
+
+    &#TryToHack:hover {
+        width: 230px;
+    }
+
+    &#LearnMore:hover {
+        width: 170px;
+    }
+`;
 
 export default function Buttons () {
     return (
         <StyledButtons>
-            <StyledButton 
+            <StyledButton
+             id="TryToHack" 
              width={"200px"} 
              backgroudColor={"#267df4"} 
              border={"none"}
@@ -38,6 +49,7 @@ export default function Buttons () {
                 Try to hack us
             </StyledButton>
             <StyledButton 
+             id="LearnMore"
              width={"140px"}
              color={"#5c5c61"}
              marginLeft={"75px"}>

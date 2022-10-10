@@ -35,6 +35,7 @@ const StyledAppStore = styled.img`
     display: block;
     width: 200px;
     margin-top: 30px;
+    cursor: pointer;
 
     @media(max-width: 1080px) {
         & {
@@ -49,7 +50,8 @@ const StyledSocialNetworks = styled.div`
 
     & > img {
         height: 20px;
-        margin: 0 auto;   
+        margin: 0 auto;
+        cursor: pointer;   
     }
 `;
 
