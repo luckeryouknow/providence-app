@@ -62,6 +62,13 @@ const StyledElemHeading = styled.div`
     margin-top: 40px;
     font-size: 32px;
     text-align: center;
+
+    @media(max-width: 800px) {
+        & {
+            margin: 0;
+            padding-top: 40px;
+        }
+    }
 `;
 
 const StyledElemPrice = styled.div`
